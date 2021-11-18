@@ -1,0 +1,1172 @@
+@-ms-viewport {
+    width: auto; /* override IE-style scrollbars, which overlay content */
+}
+
+/* global styles */
+body {
+    font-family: 'Segoe UI', 'Arial' !important;
+    font-size: 13px !important;
+    background-color: #666666 !important;
+    line-height: normal !important;
+    overflow: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: normal !important;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+    color:inherit;
+}
+
+.carousel-control {
+    height: 60px;
+    position: absolute;
+    top: 160px;
+    bottom: 0;
+    left: 0;
+    width: 5%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+
+.carousel-control.left {
+    background-image:-webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+    background-image:-o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+    background-image:-webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001)));
+    background-image:linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    background-repeat:repeat-x
+}
+.carousel-control.right {
+    right:0;
+    left:auto;
+    background-image:-webkit-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    background-image:-o-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    background-image:-webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.5)));
+    background-image:linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    background-repeat:repeat-x
+}
+
+.carousel-control > .fa-arrow-circle-left {
+    color:#fff;
+}
+.carousel-control > .fa-arrow-circle-right {
+    color:#fff;
+}
+
+
+h1 {
+    font-weight: 200;
+    font-size: 2.3em;
+    margin: 10px 0;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 1.46em;
+    margin-top: 0;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 1.15em;
+    margin-top: 0;
+}
+
+label {
+    font-weight: normal;
+    display: inline;
+}
+
+div, button, input {
+    box-sizing: border-box;
+}
+
+a {
+    color: #0d65a4;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+a[class*='ms-calloutLink'] {
+    white-space: nowrap;
+}
+
+.fa {
+    width: 20px;
+    padding: 0;
+    margin-right: 5px;
+    text-align: center;
+}
+
+/* SHAREPOINT OVERRIDES */
+.nggc-hidden {
+    display: none;
+}
+
+/* scroll ribbon elements with ribbon */
+#s4-ribbonrow .ms-MenuUIPopupBody,
+#s4-ribbonrow .ms-popoutMenu,
+.ms-cui-menu[id ^= "Ribbon."],
+.ms-cui-tooltip[id ^= "Ribbon."] {
+    position: fixed !important;
+}
+
+/* hide phantom white space at bottom of page */
+#DeltaPlaceHolderUtilityContent,
+#notificationArea {
+    display: none !important;
+}
+
+#DeltaTopNavigation,
+#sideNavBox {
+    display: none;
+}
+
+/* fix the COG positioning */
+.ms-siteactions-root > span > a.ms-core-menu-root {
+    padding: 0;
+    width: 30px;
+    text-align: center;
+}
+
+#s4-workspace {
+    position: relative;
+    overflow: visible;
+    width: 100% !important;
+}
+
+#s4-ribbonrow {
+    position: fixed;
+    width: 100%;
+    margin-bottom: 35px !Important;
+    z-index: 1001;
+    background-color: #666666;
+}
+
+#s4-bodyContainer {
+    padding: 0;
+    max-width: 1220px;
+    min-width: 1220px;
+    height: 100%;
+    display: table;
+    min-height: 100%;
+    overflow: visible !important;
+    margin: 0 auto -50px;
+    padding-bottom: 50px;
+}
+
+#DeltaPlaceHolderMain {
+    display: block;
+}
+
+#DeltaPlaceHolderPageTitleInTitleArea {
+    display: none;
+}
+
+*[id*=PlaceHolderMain] { /* prevent excessive margin from overflowing the containers */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.ms-ToolPaneOuter {
+    position: relative;
+    left: 10px;
+}
+
+/* main SP controls in the ribbon */
+a[class*='ms-'], span[class*='ms-'] {
+    box-sizing: content-box;
+}
+
+#s4-ribbonrow input[class*='ms-'] {
+    box-sizing: content-box;
+}
+
+/* fix the X button on dialog windows */
+.ms-dlgTitleBtns {
+    margin-top: 0px;
+    margin-right: 0px;
+}
+
+/* fixes Firefox display issue when web parts are placed in a Blank Web Part page template */
+.tableCol-75 {
+    width: 100%;
+}
+
+.tableCol-50 {
+    min-width: 0%;
+    width: auto;
+}
+
+/* MASTER PAGE */
+
+/* body content */
+.body-content {
+    background-color: #ffffff;
+    max-width: 960px;
+    padding: 0;
+    width: 960px;
+}
+
+.body-content-inner {
+    min-height: 0%;
+    width: 960px;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.nggc-master {
+    margin: 0 auto;
+    max-width: 960px;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.nggc-master, .nggc-master-shortcuts {
+    display: table-cell;
+}
+
+.nggc-master-header {
+    position: fixed;
+    width: 100%;
+    z-index: 998;
+}
+
+.nggc-master-header ul {
+    padding: 0;
+}
+
+.nggc-master-header-row {
+    background-color: #000000;
+    position: relative;
+    z-index: 999;
+    width: 100%;
+    height: 40px;
+    display: table;
+    padding: 0 10px;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+.nggc-master-header-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* Favorite Shortcuts */
+.nggc-master-shortcuts {
+    width: 260px;
+    max-width: 260px;
+    min-width: 260px;
+    min-height: 100%;
+    background-color: #1F4564;
+    height: auto;
+    vertical-align: top;
+}
+
+.nggc-master-shortcuts ul {
+    padding: 0;
+}
+
+.nggc-master-shortcuts ul,
+.nggc-master-shortcuts ul li {
+    list-style: none;
+    list-style-position: inside;
+}
+
+.nggc-master-shortcuts-menu {
+    display: none;
+}
+
+.nggc-master-shortcuts-header,
+.nggc-master-shortcuts-nav {
+    display: block;
+    padding: 16px 18px;
+    border: 1px solid #1f4564;
+    background-color: #406589;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.nggc-master-shortcuts-header:hover {
+    background-color: #438ad0;
+}
+
+.nggc-master-shortcuts-nav {
+    background-color: #1F4564;
+}
+
+.nggc-master-shortcuts-cell,
+.nggc-master-shortcuts-cell:visited {
+    display: block;
+    background-color: #0d2c46;
+    padding: 10px 0 10px 15px;
+    color: #e3e7f1;
+    border-bottom: 1px solid #235179;
+    cursor: pointer;
+}
+
+.nggc-master-shortcuts-cell:hover {
+    background-color: #394963;
+}
+
+#need-apps {
+    background-color: #AF6262;
+    display: block;
+    padding: 16px 18px;
+    color: #ffffff;
+}
+
+#view-all {
+    display: none;
+}
+
+/* IE9 and 10 style, required to prevent scrollbar overflow */
+@media screen and (min-width:0\0) {
+    .nggc-master-header {
+        z-index: auto\9;
+    }
+}
+
+.nggc-master-inner {
+    position: relative;
+    z-index: 998;
+}
+
+/* GlobalConnect Logo */
+.nggc-master-logo {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Search */
+.nggc-master-search {
+    padding: 0 25px 0 60px;
+    width: 50%;
+}
+
+.nggc-master-search-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.nggc-master-search-box {
+    width: 100%;
+    text-align: right;
+}
+
+.nggc-master-search-box > input[type=search] {
+    height: 24px;
+    width: 215px;
+    border: 1px inset #ffffff;
+}
+
+.nggc-master-search-button > a {
+    display: inline-block;
+    color: #000000;
+    background-color: #c0c0c0;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-left: 1px;
+}
+
+.nggc-master-search-button > a > .fa {
+    height: 24px;
+    width: 24px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* User Branding */
+.nggc-master-brands {
+    white-space: nowrap;
+    width: 35%;
+}
+
+.nggc-master-brand {
+    margin-right: 10px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.nggc-master-brand-Chevrolet {
+    height: 11px !important;
+}
+
+.nggc-master-brand-Buick {
+    height: 22px !important;
+}
+
+.nggc-master-brand-GMC {
+    height: 10px !important;
+}
+
+.nggc-master-brand-Cadillac {
+    height: 15px !Important;
+}
+
+.nggc-master-brand-Daewoo {
+    height: 30px !important;
+}
+
+/* Navigation */
+.nggc-master-nav {
+    background-color: #525252;
+    z-index: 998;
+    padding: 0;
+}
+
+.nggc-master-nav-cell {
+    display: table-cell;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    width: 16.6%;
+    padding: 0;
+    position: relative;
+}
+
+.nggc-master-nav-cell:not(:last-child) {
+    border-right: 1px solid #ffffff;
+}
+
+.nggc-master-nav-cell,
+.nggc-master-nav-cell:visited,
+.nggc-master-nav-cell:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nggc-master-nav-cell:hover {
+    background-color: #418DD0;
+}
+
+.nggc-master-nav-cell > div {
+    display: inline-block;
+}
+
+/* Dropdown Menus - Welcome */
+.nggc-master-welcome-dropdown.no-js:hover .nggc-master-welcome-menu {
+    display: block;
+}
+
+.nggc-master-welcome-button {
+    height: 40px;
+    color: #ffffff;
+    white-space: nowrap;
+    display: block;
+    padding: 10px 0;
+    text-align: right;
+    cursor: pointer;
+}
+
+.nggc-master-welcome-button .fa {
+    margin-right: 0;
+}
+
+.nggc-master-welcome-menu {
+    display: none;
+    position: absolute;
+    right: 0px;
+    background-color: #ffffff;
+    margin-bottom: 0;
+    border: 1px #C0C0C0 solid;
+}
+
+.nggc-master-welcome-menu > li {
+    border-bottom: 1px #C0C0C0 solid;
+    display: block;
+}
+
+.nggc-master-welcome-menu a,
+.nggc-master-welcome-menu div {
+    color: #000000;
+    display: block;
+    padding: 10px;
+}
+
+.nggc-master-welcome-brand {
+    display: block;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+.nggc-master-welcome-brand img {
+    margin-left: 40px;
+    max-height: 15px;
+}
+
+.nggc-master-welcome-brand img[src*=buick] {
+    max-height: 20px;
+}
+
+.nggc-master-welcome-brand img[src*=Cadillac] {
+    max-height: 15px;
+}
+
+.nggc-master-welcome-brand img[src*=daewoo] {
+    max-height: 30px;
+}
+
+/* Dropdown Menus - Nav */
+.nggc-master-nav-dropdown.no-js:hover .nggc-master-nav-menu {
+    display: block;
+}
+
+.nggc-master-nav-menu {
+    display: none;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+.nggc-master-nav-menu-cell,
+.nggc-master-nav-menu-cell:visited {
+    display: block;
+    background-color: #525252;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 10px;
+    text-align: left;
+    border-top: 1px solid #363D3D;
+}
+
+.nggc-master-nav-menu-cell:hover {
+    background-color: #418DD0;
+}
+
+.nggc-master-nav-button {
+    display: block !important;
+    height: 40px;
+    padding: 10px 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nggc-master-nav-button .fa {
+    margin-right: 0;
+}
+
+.nggc-master-nav-button .fa:not(:first-child) {
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+/* footer */
+.nggc-master-footer {
+    display: table;
+    min-height: 34px;
+    background-color: #333333;
+    position: relative;
+    width: 1220px;
+    margin: 0 auto;
+    color: #ffffff;
+    height: 50px;
+}
+
+.nggc-master-footer a {
+    color: #ffffff;
+}
+
+.nggc-master-footer-left {
+    display: table-cell;
+    padding-left: 20px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.nggc-master-footer-left > img {
+    max-height: 32px;
+}
+
+.nggc-master-footer-middle {
+    display: table-cell;
+    padding-left: 20px;
+    white-space: nowrap;
+}
+
+.nggc-master-footer-right {
+    display: table-cell;
+    padding-right: 20px;
+    text-align: right;
+    width: 100%;
+}
+
+/* MISCELLANEOUS */
+
+/* hide omniture info */
+.omniture-info {
+    display: none;
+}
+
+/* modal window styles */
+.ms-dlgOverlay {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.ms-dlgContent {
+    min-width: 800px;
+}
+
+.ms-dlgBorder, .ms-dlgContent iframe, .ms-dlgFrameContainer > div {
+    width: 100% !important;
+}
+
+.ms-dialog .nggc-master {
+    margin: 0 auto !important;
+}
+
+.ms-dialog #s4-workspace{
+    background-color: #ffffff !important;
+}
+
+.ms-dialog #s4-ribbonrow { /* prevent SP ribbon from covering form */
+    position: static;
+    margin: 0 !important;
+    height: auto !important;
+}
+
+.js-callout-closeButton {
+    border: none;
+}
+
+/* renditions */
+#renditions #rendition1,
+#renditions #rendition2,
+#renditions #rendition3,
+#renditions #rendition4,
+#renditions .ms-formline {
+    display: none;
+}
+
+/*SHAKING SHORTCUTS WHEN HOVERING OVER THEM
+    THIS IS CURRENTLY DESACTIVATED IN THE SCRIPT */
+.shake:hover,
+.shake:focus {
+    -webkit-animation-name: spaceboots;
+    -webkit-animation-duration: 0.8s;
+    -webkit-transform-origin:50% 50%;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+.nggc-master-header-row.environmentDesc {
+    background-color: #d94641;
+    color: white;
+    font-size: .9em;
+    text-align: center;
+    height: auto;
+}
+
+.nggc-master-header-row.cloneheaderdesc {
+    background-color: #428bca;
+    color: white;
+    font-size: .9em;
+    text-align: center;
+    height: auto;
+}
+
+.btn-default {
+    color:#333;
+    background-color:#fff;
+    border-color:#ccc
+}
+.btn-default:hover,.btn-default:focus,.btn-default.focus,.btn-default:active,.btn-default.active,.open>.dropdown-toggle.btn-default {
+    color:#333;
+    background-color:#e6e6e6;
+    border-color:#adadad
+}
+.btn-default:active,.btn-default.active,.open>.dropdown-toggle.btn-default {
+    background-image:none
+}
+.btn-default.disabled,.btn-default[disabled],fieldset[disabled] .btn-default,.btn-default.disabled:hover,.btn-default[disabled]:hover,fieldset[disabled] .btn-default:hover,.btn-default.disabled:focus,.btn-default[disabled]:focus,fieldset[disabled] .btn-default:focus,.btn-default.disabled.focus,.btn-default[disabled].focus,fieldset[disabled] .btn-default.focus,.btn-default.disabled:active,.btn-default[disabled]:active,fieldset[disabled] .btn-default:active,.btn-default.disabled.active,.btn-default[disabled].active,fieldset[disabled] .btn-default.active {
+    background-color:#fff;
+    border-color:#ccc
+}
+.btn-default .badge {
+    color:#fff;
+    background-color:#333
+}
+
+/*.bottomNavCell {
+    display: block;
+    padding: 10px;
+}*/
+
+/*upper nav css*/
+/*.TopNav-WelcomeMenu {
+    display: table-cell;
+    width: 23%;
+    float: none !important;
+    position: relative;
+}
+
+#TopNavWelcomeMenu .js {
+    margin-bottom: 0;
+}*/
+
+/*.js, .no-js {
+    width: 100%;
+    margin-bottom: 0;
+    text-align: right;
+}*/
+
+/*.click-nav ul {
+    font-weight: normal;
+}
+
+.click-nav ul li {
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+}
+
+.click-nav ul li ul {
+    position: absolute;
+    right: 0;
+    background-color: #ffffff;
+}
+
+.click-nav ul .clicker {
+    height: 40px;
+    color: #FFF;
+    white-space: nowrap;
+}
+
+.clicker {
+    text-align: right;
+}*/
+
+/*.click-nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.click-nav .no-js ul {
+    display: none;
+}
+
+.click-nav .no-js:hover ul {
+    display: block;
+}
+
+#dropDownWelcome {
+    left: 170px !Important;
+}
+
+
+.brandDropDown img {
+    border: 0;
+    margin-left: 40px;
+    display: inline-block;
+    max-height: 15px;
+}*/
+
+/*.brandDropDown img[src*=buick] {
+    max-height: 20px;
+}
+
+.brandDropDown img[src*=Cadillac] {
+    max-height: 15px;
+}
+
+#topNavClicker {
+    padding-left: 10px !Important;
+    padding-top: 10px;
+}
+
+#applyButtonLink {
+    height: 40px !Important;
+}
+
+.ulWelcomeMenu {
+    white-space: nowrap;
+    text-align: left;
+}*/
+
+/*#fa-search {
+    padding: 5px;
+    color: #000000;
+    background-color: silver;
+    margin-left: 1px;
+    width: auto;
+    vertical-align: middle;
+}
+
+#lnkSearch #fa-search {
+    height: 24px;
+    margin-right: 0;
+}
+
+.faSearchButton {
+    padding: 0px;
+    min-width: 0px;
+}*/
+
+
+/*#fa-chevron-down {
+    width: auto;
+    margin-left: 5px;
+}*/
+
+/*#TopNav-Table {
+    width: 100%;
+    height: 40px;
+    display: table;
+}*/
+
+/*#TopNav-Logo {
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    padding-left: 10px;
+    display: table-cell;
+    width: 37%;
+    vertical-align: middle;
+}*/
+
+/*#TopNav-Logo a {
+    color: white;
+}
+
+#TopNav-Logo a:hover {
+    text-decoration: none;
+}*/
+
+/* ensure the a link outline matches the contents */
+/*#TopNav-Logo > #brandingctrl > a {
+    display: inline-block;
+}*/
+
+/*#TopNav-SearchBox {
+    display: table-cell;
+    width: 18%;
+    vertical-align: middle;
+    text-align: right;
+    color: #000000;
+}
+
+#TopNav-SearchImage {
+    display: table-cell;
+    width: 5%;
+    vertical-align: middle;
+}*/
+
+/*.TopNav-BrandLogos {
+    width: 17%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#userBrandsCtrl {
+    display: block;
+    white-space: nowrap;
+}
+
+ul.ulWelcomeMenu {
+    border: 1px silver solid;
+}
+
+.ulWelcomeMenu li {
+    border-bottom: 1px silver solid;
+}*/
+/*end upper nav css*/
+
+
+/*Bottom Nav CSS*/
+/*#ulDepartments li {
+    border-top: 1px #363D3D solid;
+}
+
+.click-Bottomnav {
+    width: 100%;
+}
+
+.click-Bottomnav:hover {
+    background-color: #418DD0;
+}
+
+.click-Bottomnav ul {
+    font-weight: normal;
+}
+
+.click-Bottomnav ul li {
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+}
+
+.click-Bottomnav ul li ul {
+    position: absolute;
+    left: 0;
+    right: 0;
+}*/
+
+/*.click-Bottomnav ul .clicker {
+    background: #525252;
+    color: #FFF;
+}
+
+.click-Bottomnav ul .active {
+    background: #525252;
+}
+
+.click-Bottomnav ul .clicker:hover {
+    background-color: #418DD0;
+}
+
+.click-Bottomnav img {
+    position: absolute;
+    top: 9px;
+    left: 12px;
+}
+
+.click-Bottomnav ul li a {
+    display: block;
+    background: #525252;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.click-Bottomnav ul li a:hover {
+    background: #418DD0;
+}*/
+
+/*.click-Bottomnav .no-js ul {
+    display: none;
+}
+
+.click-Bottomnav .no-js:hover ul {
+    display: block;
+}
+
+.bottomNavListItems {
+    display: block;
+    text-align: left;
+    padding: 8px 10px;
+}*/
+
+/*/*.bottomNavCells {
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+}*/
+
+/*#bottomNav-Departments, .bottomNavCells {
+    width: 19%;
+    padding: 0;
+    border-right: 1px solid #ffffff;
+}
+
+.bottomNavCell {
+    display: block;
+    padding: 10px;
+}
+
+.bottomNavText {
+    display: inline-block;
+}
+
+.bottomNavCells:last-child {
+    border-right: none;
+}
+
+.bottomNavCells:hover {
+    background-color: #418DD0;
+}
+
+.bottomNavCells > table {
+    margin: auto;
+}
+
+.bottomNavCells a {
+    color:white;
+}*/
+
+/*.bottomNavCells a:visited{
+    color:white;
+}
+
+.bottomNavIcons {
+    cursor: pointer;
+    font-weight: normal;
+}*/
+
+/*.bottomNav {
+    min-height: 40px;
+    background-color: #525252;
+    max-width: 100%;
+    position: relative;
+    z-index: 10;
+}*/
+
+/*#bottomNavClicker {
+    white-space: nowrap;
+    text-align: center;
+    height: 40px;
+    padding: 10px;
+}*/
+
+/*#bottomNavClicker i.fa-chevron-down {
+    margin-right: 0;
+    margin-left: 5px;
+}*/
+
+/*#bottomNav-Departments:hover {
+    color: white;
+}
+
+#bottomNav-table {
+    width: 100%;
+}*/
+
+/*end Bottom Nav CSS*/
+
+/**,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}*/
+
+
+/*#globalNavBox {
+    background-color: silver !Important;
+}
+
+#ribbon-spacer {
+    height: 0;
+}
+
+#header-spacer  {
+    background-color: #ffffff;
+}
+
+#header-spacer-shortcuts {
+    background-color: #1F4564;
+}
+
+.searchButton {
+    width: 213px;
+    height: 24px;
+}*/
+
+/* prevent masterpage from showing up on a Modal window */
+/*.ms-dialog .nggc-master-header,
+.ms-dialog #ribbon-spacer,
+.ms-dialog #header-spacer,
+.ms-dialog #header-spacer-shortcuts,
+.ms-dialog .TopNav,
+.ms-dialog .bottomNav,
+.ms-dialog .footer,
+.ms-dialog .favorite-shortcuts {
+    display: none !important;
+}*/
+
+/* end dialog styles */
+
+/*#DeltaTopNavigation {
+    display: none;
+}
+
+
+.js-callout-closeButton {
+    border: none;
+}
+
+#dlgTitleBtns{
+    padding-right:20px;
+}*/
+
+/* back button */
+/*#backButton {
+    margin-bottom: 10px;
+}*/
+
+/* nav menu styles */
+/*#nav {
+  display: block;
+  width: 260px;
+}
+#nav ul,#nav
+{
+    list-style-type: none;
+}
+#nav > li > a {
+ display: block;
+  padding: 16px 18px;
+  font-size: 13px;
+  font-weight: normal;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 2px solid #1F4564;
+  background-color: #406589;
+}
+#nav > li > a:hover, #nav > li > a.open {
+  color: #e9e9e9;
+
+  background-color: #438ad0;
+
+}
+#nav li ul {
+    display: none; background: #4a5b78; border:2px solid #427090;
+}
+
+#nav li ul li a {
+    display: block;
+    background: #0D2C46;
+    padding: 10px 0px;
+    padding-left: 15px;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: normal;
+    color: #e3e7f1;
+    text-shadow: 1px 1px 0px #000;
+    border-bottom:1px solid #235179;
+}
+
+#nav li ul li a:hover {
+    background: #394963;
+}
+
+#nav li a {
+    cursor:pointer;
+}
+
+
+#need-apps:hover, #need-apps.open,need-apps{
+    background-color:#AF6262 !Important;
+}
+
+#view-all a, #view-all a:visited {
+  color:white;
+  float:right;
+  padding-right:20px;
+  cursor:pointer;
+}*/
+/*view all is hidden now,
+    please remove display none to activate it again in the future*/
+/*#view-all{
+    padding-bottom:100px;
+    display:none !Important;
+}*/

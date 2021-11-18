@@ -1,0 +1,73 @@
+#department-content {
+    padding: 0;
+}
+
+#department-content > .communication-zone {
+    padding: 10px 10px 5px;
+}
+
+#left-col {
+    background-color: #ffffff;
+    float: left;
+    padding: 0px 10px 10px 0px;
+    width: 620px;
+}
+
+#left-col > .content-header {
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+#left-col .comp {
+    padding: 10px 0;
+}
+
+#right-col {
+    background-color: #f0f0f0;
+    float: left;
+    padding: 0px 0px 0;
+    width: 320px;
+}
+
+#right-col .comp {
+    padding: 10px 10px 0;
+}
+
+#right-col .AllSurveys .comp {
+    padding: 0;
+}
+
+.badge {
+    margin-left: 5px;
+}
+
+.active-filter {
+    background-color: #d9d9d9 !important;
+}
+
+/* right-col styles to keep nice flow when editing page */
+#right-col .ms-webpart-chrome-vertical,
+#right-col .ms-webpartzone-cell,
+#right-col .ms-SPZone,
+#right-col .ms-webpart-zone {
+    display: block;
+}
+
+/* Urgent Messages sharepoint/microsoft CSS overrides (for Home and Support) */
+#department-content > div.ms-webpart-zone.ms-fullWidth,
+#communication-zone > div {
+    display: inline;
+    width: auto;
+}
+
+#department-content > div.ms-webpart-zone.ms-fullWidth > div,
+#communication-zone > div > div {
+    display: inline;
+    width: auto;
+}
+
+#department-content > div.ms-webpart-zone.ms-fullWidth > div > div,
+#communication-zone > div > div > div {
+    display: inline;
+    min-width: 0;
+}

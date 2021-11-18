@@ -1,0 +1,456 @@
+/* This file contains all styles needed for the content type Detail Views. */
+
+/* General */
+.cont-title-wrap {
+    margin: 10px 0;
+    padding: 0 0 5px 0;
+    border-bottom: 1px solid #CCC;
+    max-width: 940px;
+    overflow: auto;
+}
+
+.news-img {
+    max-width:400px;
+    border: 1px solid #E2E2E2;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.news-img img {
+    max-width: 400px !important;
+}
+
+.omniture-info {
+    display: none;
+}
+
+/* modal styles */
+.ms-dialog #s4-ribbonrow,
+.ms-dialog .content-header,
+.ms-dialog #shotcutDisplayText,
+.ms-dialog .bckbutn {
+    display: none !important;
+}
+
+.ms-dialog .body-content {
+    padding: 0 !important;
+}
+
+.ms-dialog .content-wrap {
+    min-width: 0%;
+}
+
+.ms-dialog .alert-properties a {
+    pointer-events: none;
+    cursor: default;
+    color: #636363 !important;
+}
+
+/* Item Details*/
+.news-details-wrap h3 {
+    font-weight: normal;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.news-details-wrap p {
+    font-size: 0.9em;
+}
+
+.news-cont {
+    margin: 10px 0 0 0;
+}
+
+/* Item Properties */
+.news-properties h4 {
+    font-size: 1em;
+    font-weight: normal;
+    padding: 10px 0 0px 0;
+    border-bottom: 1px solid #CCC;
+    margin: 10px 0 10px 0;
+    color: #333;
+}
+
+.news-properties p {
+    font-size: 0.9em;
+    color: #636363;
+    margin: 0;
+}
+
+.news-properties a {
+    text-decoration: none;
+    color: #039;
+}
+
+#divAddKword, #divAddKword div {
+    display: inline;
+}
+
+/* Buttons */
+.bckbutn {
+    float: left;
+    padding: 8px 15px;
+    border: 1px solid #e2e2e2;
+    margin: 0;
+    border-radius : 3px;
+    font-size: 0.9em;
+    background-color: #444445;
+    cursor: pointer;
+    color: #ffffff;
+    display: inline-block;
+    min-height: 35px;
+}
+
+#WPViewAll .bckbutn {
+    margin-bottom: 10px;
+}
+
+.uc-wrap {
+    float: right
+}
+
+.action-butn {
+    min-height:23px;
+    padding: 8px 15px;
+    border: 1px solid #e2e2e2;
+    margin: 0 0 0 5px;
+    border-radius : 3px;
+    font-size: 0.9em;
+    background-color: #444445;
+    cursor: pointer;
+    color: #FFF;
+    text-align: center;
+    height:35px
+}
+
+/* Add to My Shortcuts Button */
+.add-shortcut-wrap {
+    width: 340px;
+    position: absolute;
+    margin: 3px 0 0 -85px;
+}
+
+.add-shortcut-container {
+    position: absolute;
+    margin-top: 2px;
+    background-color: #444445;
+    border-radius: 5px;
+    padding: 20px 5px;
+    font-size: 0.9em;
+    color: #FFF;
+    text-align: center;
+}
+
+.add-shortcut-cell {
+    display: table-cell;
+    padding: 0 5px;
+}
+
+.add-shortcut-error {
+    color: red;
+}
+
+.add-shortcut-input {
+    width: 100%;
+}
+
+.add-shortcut-table {
+    display: block;
+    margin: 0;
+}
+
+/* Send Email Button */
+.add-short-pallet {
+    width: 320px;
+    background-color: #444445;
+    margin: -1px 0 0 1px;
+    border-radius: 5px;
+    padding: 20px 10px;
+    font-size: 0.9em;
+    color: #FFF;
+    text-align: center;
+}
+
+.send-email-container {
+    display: table;
+}
+
+.send-email-row {
+    display: table-row;
+}
+
+.send-email-cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    padding-top: 5px;
+}
+
+.send-email-cell:first-child {
+    max-width: 120px;
+}
+
+.send-email-cell:not(:first-child) {
+    padding-left: 5px;
+}
+
+.send-email-error {
+    color: red;
+}
+
+#sendEmailTitleTextContainer textarea,
+#sendEmailTitleTextContainer input[type*=text] {
+    color: #000000;
+    width: 100%;
+    resize: none;
+}
+
+#sendEmailTitleTextContainer > table {
+    border-spacing: 5px;
+    border-collapse: separate;
+}
+
+#sendEmailTitleTextContainer td {
+    text-align: left;
+    white-space: nowrap;
+}
+
+/* Headlines */
+.news-top {
+    display: table;
+}
+
+#news-properties {
+    padding-bottom: 10px;
+}
+
+#newstitle {
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 10px;
+}
+
+/* Reference Library */
+.ms-core-tableNoSpace {
+    width: 100%;
+}
+
+.congal-details-img-wrap {
+    display: table-cell;
+    max-width: 400px;
+}
+
+.congal-details-img-wrap img {
+    max-width: 400px;
+    padding-right: 10px;
+}
+
+.congal-details-docdetails {
+    width: auto;
+    overflow: hidden;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.gen-butn {
+    width: 150px;
+    padding: 5px;
+    background-image:url(../images/butn-bg-drk.png);
+    text-align: center;
+    margin: 10px 0 0 0;
+    color: #FFF;
+    font-size: 0.9em;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.gen-butn:hover {
+    background-image: url(../images/butn-bg-light.png);
+}
+
+/* Alerts */
+#alertimage {
+    float: none !important;
+    margin-right:10px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#alertimage img {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+#contentTitleContainer {
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 5px;
+}
+
+.alert-details-wrap p {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.alert-details-wrap h3 {
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.alert-properties h4 {
+    font-weight: normal;
+    padding: 10px 0 0px 0;
+    border-bottom: 1px solid #CCC;
+    margin: 10px 0 10px 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.alert-properties p {
+    font-size: 0.9em;
+    color: #636363;
+    margin: 0;
+}
+
+.alert-properties p a {
+    color: #0072C6;
+    text-decoration:none;
+}
+
+/* Urgent */
+.urgnt-details-wrap {
+    width: auto;
+}
+
+.urgnt-details-wrap p {
+    font-size: 0.9em;
+}
+
+.urgnt-details-wrap h2 {
+    font-weight: normal; margin: 0;
+}
+
+.urgnt-details-wrap h5 {
+    font-weight: normal; margin: 0;
+}
+
+.urgnt-img-wrap {
+    padding: 0 10px 5px 0;
+    float: left;
+}
+
+.urgnt-img-wrap img {
+    max-width:400px;
+}
+
+.urgnt-cont h3 {
+    margin: 0 0 2px 0;
+}
+
+.urgnt-cont {
+    float: left;
+    text-align: left;
+}
+
+/* Support Details */
+#main-content {
+    border: 1px solid #cccccc;
+    margin-top: 5px;
+    padding: 10px;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 940px;
+}
+
+.faq-image {
+    max-width: 400px;
+    float: right;
+}
+
+.faq-image img {
+    max-width: 400px;
+}
+
+#support-content-wrap .cont-title-wrap {
+    padding-bottom: 0px !important;
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+}
+
+.faq-question {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.faq-answer-header {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#support-content-wrap .bckbutn {
+    margin-left: 0px !important;
+}
+
+/* print styles */
+@media print {
+
+    .ms-dialogHidden {
+        display: none;
+    }
+
+    body * {
+        visibility: hidden;
+        page-break-inside: auto !important;
+        float: none !important;
+        overflow: visible !important;
+    }
+
+    #s4-bodyContainer,
+    .nggc-master,
+    .body-content,
+    .body-content-inner,
+    #main-content,
+    .content-wrap {
+        display: block !important;
+        width: auto !important;
+        max-width: none !important;
+        margin: 0 !important;
+    }
+
+    .body-content-inner {
+        padding: 0 !important;
+    }
+
+    #s4-ribbonrow,
+    .nggc-master-header,
+    #DeltaPageStatusBar,
+    .footer,
+    #LblFavoriteShortcutsHTML {
+        position: relative;
+        display: none !important; /* override inline style on ribbon element */
+    }
+
+    #DeltaPlaceHolderMain, #DeltaPlaceHolderMain * {
+        visibility: visible;
+    }
+
+    /* this element is to override PageDetail.css - merge these two sets of styles*/
+    #newsPrintArea {
+        position: relative !important;
+    }
+
+    /* print authoring details page */
+    .cont-title-wrap {
+        display: none;
+    }
+
+    /* print FAQ table correctly in Chrome */
+    .faq-details {
+        width: auto !important;
+    }
+
+    a[href]:after {
+        content: "" !important;
+    }
+
+}

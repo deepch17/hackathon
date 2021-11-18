@@ -1,0 +1,683 @@
+/* container for page content */
+.page {
+    text-align: center; /* center content in IE */
+}
+
+/* container for page zones */
+.content {
+    height: auto;
+    width: 940px !important;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 10px;
+
+}
+
+/* page header / title */
+.content-header {
+    overflow: auto;
+    border-bottom: 1px solid #999999;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    color: #626262;
+    width: 100%;
+    display: table;
+}
+
+.content-title {
+    font-style: normal;
+    font-size: 16px;
+    color: #333333;
+    text-align: left;
+    margin: 0px;
+    display: table-cell;
+    padding: 0;
+    vertical-align: bottom;
+}
+
+/* container for page components */
+.zone {
+    box-sizing: border-box;
+    height: auto;
+    margin: 0px;
+    padding: 15px;
+    border: 1px solid #ffffff;
+}
+
+/* a single page component, similar to a SP web part */
+.comp {
+    box-sizing: border-box;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 0;
+    text-align: left;
+}
+
+.comp:last-child {
+    margin-bottom: 0px;
+}
+
+.comp-header {
+    color: #333333;
+    overflow: auto;
+    border-bottom: 1px solid #999999;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    width: 100%;
+    display: table;
+}
+
+.comp-link { /* current issues view all */
+    padding: 5px 0;
+}
+
+.comp:first-child .comp-header {
+    padding-top: 0;
+}
+
+.comp-title {
+    font-style: normal;
+    font-size: 14px;
+    color: #333333;
+    text-align: left;
+    margin: 0px;
+    display: table-cell;
+    padding: 0;
+    vertical-align: bottom;
+}
+
+.comp-title .fa {
+    margin-right: 5px;
+}
+
+/* search bar in component header */
+/* currently used only in app center */
+.comp-header-search {
+    display: table-cell;
+    width: auto;
+    text-align: right;
+}
+
+.comp-header-search-input {
+    border: 1px solid #b0b0b0;
+    height: 22px;
+    padding-left: 2px;
+    width: 315px;
+}
+
+/* filter button and dropdown menu in component header */
+/* currently used only in app center */
+
+.comp-header-filter {
+    display: table-cell;
+    padding-left: 10px;
+    position: relative;
+    vertical-align: bottom;
+    text-align: right;
+}
+
+.filter-menu {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 6px 2px #939393;
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    width: 200px;
+    z-index: 10;
+    text-align: left;
+}
+
+.filter-menu > li {
+    border: 1px solid #f0f0f0;
+    cursor: pointer;
+    display: block;
+    padding: 5px 10px;
+}
+
+.filter-menu > li:not(.filter-menu-buttons):hover {
+    background-color: #f0f0f0;
+}
+
+.filter-menu-buttons > .nggc-button {
+    width: 49%;
+}
+
+.comp-content {
+    border: 1px solid #d8d8d8;
+    box-shadow: 0px 5px 10px #cccccc;
+    background-color: #ffffff;
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+    padding-bottom: 5px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.comp-change-view {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.comp-change-view .fa {
+    font-size: 18px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.comp-features {
+    box-shadow: none;
+    border: 1px solid #d3d3d3;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 0px;
+    margin-top: 0px;
+    text-align: left;
+}
+
+.comp-view-all {
+    margin-top: 10px;
+    margin-right: 5px;
+    text-align: right;
+}
+
+#FeatureContainer .comp-view-all {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+/* button representing a content type (headlines, etc.) */
+/* default styles represent list view (full width) */
+/* styles should work for button, div, or a markup */
+.content-button {
+    background: linear-gradient(#ffffff, #f6f6f6); /* IE 10+, Chrome */
+    border: 1px solid #d8d8d8;
+    color: #000000; /* a version */
+    cursor: pointer; /* div version */
+    display: table;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6'); /* IE 9 and lower */
+    height: 85px;
+    margin: 0;
+    margin-bottom: 5px;
+    position: relative;
+    table-layout: fixed;
+    text-align: left;
+    width: 100%;
+}
+
+.content-button:hover {
+    box-shadow: 0px 0px 2px 1px #e8e8e8;
+    text-decoration: none;
+}
+
+.content-button:last-child {
+    margin-bottom: 0;
+}
+
+.content-button-info {
+    display: table-cell;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 100%;
+    padding-right: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.content-button-info > span {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.content-button-info span.bold {
+    font-weight: bold;
+}
+
+.message-button > .content-button-info {
+    padding-left: 10px;
+}
+
+.content-button-img {
+    display: table-cell;
+    padding: 0 10px;
+    vertical-align: middle;
+    width: 100px;
+}
+
+.content-button-img img {
+    background-color: #f0f0f0;
+    border: none;
+    height: 55px;
+    width: 80px;
+    /* If the SP user provides 'spacing' for an image, it adds margin */
+    /* prevent it from showing up on the button */
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.comp-reference-library .content-button-img img {
+    height: 65px;
+    width: 95px;
+}
+
+.alerts .content-button-img > img {
+    height: 22px;
+    width: 22px;
+}
+
+.content-button-info > span > *:nth-child(n+4) {
+    display: none;
+}
+
+.quick-link-button .content-button-img {
+    width: 100px;
+}
+
+.alerts .content-button-img {
+    width: 42px;
+}
+
+.comp-reference-library .content-button-img{
+    width: 115px;
+}
+
+.app-button .content-button-img {
+    width: 70px;
+}
+
+.app-button .content-button-info {
+    white-space: normal;
+}
+
+/* content button - small version (alerts, messages) */
+.small-content-button {
+    background-color: #ffffff;
+    background: none;
+    filter: none;
+    height: 45px;
+    margin: 0;
+}
+
+.small-content-button-img {
+    padding: 5px;
+}
+
+.content-button-img > .fa {
+    text-align: center;
+    width: 1em;
+    padding: 0;
+}
+
+.content-button-details {
+    color: #cccccc;
+    font-size: 0.75em;
+    position: absolute;
+    right: 5px;
+    text-align: right;
+    top: 0;
+}
+
+/* content button - medium version (messages) */
+.message-button {
+    height: 50px;
+}
+
+/* grid view - two-column layout of half-sized buttons */
+.comp-content-grid {
+    line-height: 0;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.comp-content-grid:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+
+.comp-content-grid .content-button {
+    display: inline-table;
+    line-height: normal;
+    margin-bottom: 10px;
+    width: 49.5%;
+}
+
+.comp-content-grid .small-content-button {
+    margin-bottom: 5px;
+}
+
+.comp-content-grid .content-button:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+}
+
+/* font awesome 'x' icon used on content buttons */
+.button-close {
+    display: table-cell;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.content-button:not(.app-button) .button-close {
+    text-align: center;
+    width: 40px;
+}
+
+/* component content container for app buttons */
+.app-content {
+    background-color: #f0f0f0;
+    line-height: 0;
+    overflow: hidden;
+    padding: 0 0 5px 0;
+}
+
+.app-content-left {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+}
+
+/* content button - application */
+.app-button {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    box-shadow: none;
+    display: inline-table;
+    height: 80px;
+    line-height: normal;
+    margin: 5px 17px 0 17px;
+    padding: 5px;
+    width: 195px;
+    vertical-align: middle;
+}
+
+.app-button > .content-button-img {
+    padding: 5px;
+}
+
+.app-button > .content-button-img > img {
+    background-color: #418dd0;
+    border-radius: 8px;
+    height: 60px;
+    width: 60px;
+}
+
+.app-button-close {
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* pagination */
+.pagination-footer {
+    background-color: #d8d8d8;
+    display: table;
+    height: 40px;
+    margin: 0;
+    padding: 5px;
+}
+
+.pagination-entry-select {
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.pagination-page-select, .pagination-page-select > span {
+    display: table-cell;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.pagination-button {
+    background-color: #ffffff;
+    border: 1px solid #d8d8d8;
+    cursor: pointer;
+    vertical-align: middle;
+    padding: 5px 10px;
+}
+
+.pagination-current {
+    background-color: #f0f0f0;
+}
+
+.pagination-button:hover {
+    background-color: #f0f0f0;
+    text-decoration: none;
+}
+
+.pagination-page-select .aspNetDisabled {
+    background-color: #f0f0f0;
+}
+
+/* let us know survey box */
+.comp-survey {
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+#survey-form {
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.survey-answer {
+    float: left;
+    width: 50px;
+}
+
+.survey-count, .survey-percent {
+    text-align: right;
+}
+
+.survey-bar {
+    background-color: #418dd0;
+    float: left;
+    height: 15px;
+    width: 160px;
+}
+
+.survey-view-results {
+    margin: 0 10px 0 0;
+    text-align: right;
+}
+
+.profile-table td.center {
+    text-align: center;
+}
+
+/* profile table */
+.profile-table {
+    display: table;
+    width: 100%;
+}
+
+.profile-row {
+    display: table-row;
+    width: 100%;
+}
+
+.profile-cell {
+    border: 1px solid #f0f0f0;
+    display: table-cell;
+    margin: 0px;
+    padding: 5px;
+}
+
+.profile-cell-left {
+    text-align: left;
+    white-space: nowrap;
+}
+
+.profile-cell-right {
+    overflow: auto;
+    padding-left: 5px;
+    width: auto;
+    word-wrap: break-word;
+}
+
+/* NGGC-styled buttons */
+.nggc-button {
+    background-color: #418dd0;
+    border: 1px solid #b0b0b0;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-style: normal;
+    font-size: 13px;
+    height: 22px;
+    padding: 0 10px;
+    text-align: center;
+    vertical-align: bottom;
+    white-space: nowrap;
+    min-width: 0%;
+}
+
+.nggc-button:hover { /* override a styles */
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nggc-button-grey {
+    background-color: #cacaca;
+    color: #000000;
+}
+
+.nggc-button-grey:hover { /* override a styles */
+    color: #000000;
+}
+
+#applyButtonLink .nggc-button {
+    background-color: #00a2e8;
+}
+
+#list-all-header {
+    padding-top: 10px;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#list-all-footer {
+    background-color : rgb(203, 196, 181);
+    width : 100%;
+    overflow:hidden;
+    padding: 6px 3px;
+}
+
+#list-all-footer > * {
+    display : inline-block;
+}
+
+.pagination-control {
+    right : 0px;
+}
+
+.pagination-control > * {
+    display : inline-block;
+    padding : 5px 10px;
+    background-color : white;
+    margin-right: -4px;
+}
+
+.basic-container {
+    overflow: auto;
+}
+
+.entry-selector {
+    position: relative;
+    bottom: -8px;
+}
+
+.comp-title.list-all-header {
+    position : relative;
+    bottom: -18px;
+}
+
+.list-all-contents {
+    padding: 15px 22px;
+}
+
+.button-date {
+    position : relative;
+    top : -30px;
+    right : 50px;
+    float : right;
+    opacity: 0.3;
+}
+
+/* communication zone (Urgent Messages) */
+.communication-zone {
+    margin: 0;
+    padding: 0;
+}
+
+#communication-zone {
+    margin: 0;
+    padding: 0;
+}
+
+div.communication {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align:left;
+}
+
+div.communication-urgent {
+    background-color: #ffe5e5;
+    border-left: 7px solid #ff0000;
+    white-space: nowrap;
+}
+
+div.communication-urgent .inline {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+div.communication-urgent-display {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 700px;
+}
+
+div.communication:last-child {
+    margin-bottom: 0;
+}
+
+.zero-results-msg {
+    display: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15px;
+    padding: 40px 0px 40px 0px;
+}
+
+.ms-webpartzone-cell {
+    margin-bottom: 5px;
+}
+
+/* styles for Create content type page */
+.create-error { /* prevent error message from wrapping */
+    display: block;
+}
+
+/* Hide the My Profile Back button (used in custom sites only) */
+#my-profile-content .bckbutn {
+    display: none !important;
+}
+

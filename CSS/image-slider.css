@@ -1,0 +1,115 @@
+#FeatureContainer {
+    padding-top: 10px;
+}
+
+.carousel {
+    width:100%;
+    margin:0 auto; /* center your carousel if other than 100% */
+    z-index: 8;
+}
+
+.carousel-main {
+    position: relative;
+}
+
+.carousel-caption {
+    text-align: left;
+    background-color: rgba(51, 51, 51, .6);
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 5px 20px;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.carousel-control > .fa-arrow-circle-left {
+    font-size: 30px;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+}
+
+.carousel-control > .fa-arrow-circle-right {
+    font-size: 30px;
+    position: absolute;
+    top: 25%;
+    right: 20%;
+}
+
+.carousel-caption > a {
+    color:#fff;
+}
+
+.slider-size {
+    height: 440px;
+}
+
+.feature-indicators {
+    display: inline-block;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.feature-indicators li {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 0;
+    height: auto;
+    width: auto;
+    margin: 0;
+    position: relative;
+    text-indent: 0; /* bootstrap override */
+}
+
+.feature-indicators li:not(:last-child) {
+    padding-right: 8px;
+}
+
+/* override bootstrap li.active */
+.feature-indicators li.active {
+    height: auto;
+    width: auto;
+}
+
+.feature-indicators li .indicator-image {
+    display: block;
+    height: 83px;
+    width: 178px;
+    border: 1px solid #f0f0f0;
+}
+
+.feature-indicators li .indicator-text {
+    width: 178px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.indicator-text > a {
+    color: #8e8e8e;
+    transition: color 1s;
+    line-height: 17px;
+    height: 34px;
+    display: block;
+    overflow: hidden;
+}
+
+.indicator-image {
+    opacity: 0.7;
+    transition: opacity 1s;
+}
+
+.active .indicator-text,
+.active .indicator-text > a {
+    color: #0d65a4;
+}
+
+.active .indicator-image {
+    opacity: 1;
+}
